@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container } from './App.styled';
+import { Container, PhoneFrame, Title, ContentContainer } from './App.styled';
 import { nanoid } from 'nanoid';
 import ContactForm from './ContactForm/ContactForm';
 import ContactList from './ContactList/ContactList';
@@ -60,20 +60,18 @@ export class App extends Component {
 
     return (
       <Container>
-        <div>
-          <h1>Phonebook</h1>
-
-          <ContactForm onSubmit={this.addContact} />
-
-          <h2>Contacts</h2>
-
-          <Filter filter={filter} onChangeFilter={this.changeFilter} />
-
-          <ContactList
-            contacts={filteredContacts}
-            onDeleteContact={this.deleteContact}
-          />
-        </div>
+        <PhoneFrame>
+          <Title>Phonebook</Title>
+          <ContentContainer>
+            <ContactForm onSubmit={this.addContact} />
+            <Title>Contacts</Title>
+            <Filter filter={filter} onChangeFilter={this.changeFilter} />
+            <ContactList
+              contacts={filteredContacts}
+              onDeleteContact={this.deleteContact}
+            />
+          </ContentContainer>
+        </PhoneFrame>
       </Container>
     );
   }
