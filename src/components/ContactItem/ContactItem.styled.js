@@ -1,19 +1,31 @@
 import styled from 'styled-components';
 
-export const Form = styled.form`
+export const Item = styled.li`
+  margin-bottom: 10px;
+`;
+
+export const Info = styled.div`
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 300px;
-  margin-bottom: 20px;
+  align-items: center;
 `;
 
-export const Label = styled.label`
-  margin-bottom: 10px;
+export const Name = styled.p`
   font-weight: bold;
+  margin-right: 10px;
+  padding-right: 10px;
 `;
 
-export const Input = styled.input`
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+export const Number = styled.p`
+  color: gray;
+  padding-right: 10px;
+`;
+
+export const DeleteButton = styled.button`
+  padding: 5px;
+  background-color: #ff3d00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+`;
