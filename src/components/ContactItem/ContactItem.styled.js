@@ -12,10 +12,12 @@ export const Info = styled.div`
 export const Name = styled.p`
   font-weight: bold;
   margin-right: 10px;
+  padding-right: 10px;
 `;
 
 export const Number = styled.p`
   color: gray;
+  padding-right: 10px;
 `;
 
 export const DeleteButton = styled.button`
