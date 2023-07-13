@@ -1,10 +1,11 @@
 import React from 'react';
+import { Wrapper, Input } from './Filter.styled';
 
 const Filter = ({ filter, onChangeFilter }) => (
-  <label>
+  <Wrapper>
     Filter contacts by name:
-    <input type="text" value={filter} onChange={onChangeFilter} />
-  </label>
+    <Input type="text" value={filter} onChange={onChangeFilter} />
+  </Wrapper>
 );
 
 export default Filter;

@@ -1,17 +1,27 @@
 import React from 'react';
-import ContactItem from '../ContactItem/ContactItem';
+import {
+  List,
+  ListItem,
+  ContactInfo,
+  Name,
+  Number,
+  DeleteButton,
+} from './ContactList.styled';
 
 const ContactList = ({ contacts, onDeleteContact }) => (
-  <ul>
+  <List>
     {contacts.map(({ id, name, number }) => (
-      <ContactItem
-        key={id}
-        name={name}
-        number={number}
-        onDelete={() => onDeleteContact(id)}
-      />
+      <ListItem key={id}>
+        <ContactInfo>
+          <Name>{name}</Name>
+          <Number>{number}</Number>
+        </ContactInfo>
+        <DeleteButton type="button" onClick={() => onDeleteContact(id)}>
+          Delete
+        </DeleteButton>
+      </ListItem>
     ))}
-  </ul>
+  </List>
 );
 
 export default ContactList;
