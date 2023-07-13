@@ -24,10 +24,11 @@ export const Number = styled.p`
 `;
 
 export const DeleteButton = styled.button`
-  padding: 2px 5px;
+  padding: 5px;
   background-color: #ff3d00;
   color: #fff;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
 `;
