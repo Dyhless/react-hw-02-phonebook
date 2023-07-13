@@ -1,14 +1,19 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.label`
+  display: flex;
+  flex-direction: column;
   margin-bottom: 10px;
+  width: 100%;
+`;
+
+export const Label = styled.p`
   font-weight: bold;
+  margin-bottom: 5px;
 `;
 
 export const Input = styled.input`
-  padding: 10px;
+  padding: 5px;
   margin-top: 5px;
-  border: none;
-  border-radius: 5px;
-  background-color: #f4f4f4;
+  width: 100%;
 `;
