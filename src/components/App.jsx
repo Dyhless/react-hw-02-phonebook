@@ -42,8 +42,8 @@ export class App extends Component {
     }));
   };
 
-  changeFilter = e => {
-    this.setState({ filter: e.target.value });
+  changeFilter = event => {
+    this.setState({ filter: event.target.value });
   };
 
   getFilteredContacts = () => {
