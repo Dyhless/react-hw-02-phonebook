@@ -10,10 +10,11 @@ export const Wrapper = styled.label`
 export const Label = styled.p`
   font-weight: bold;
   margin-bottom: 5px;
+  width: 100%;
 `;
 
 export const Input = styled.input`
   padding: 5px;
   margin-top: 5px;
-  width: 100%;
+  width: 95%;
 `;
