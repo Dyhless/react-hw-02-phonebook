@@ -58,7 +58,7 @@ export class App extends Component {
     const filteredContacts = this.getFilteredContacts();
 
     return (
-      <div>
+      <div className="container">
         <h1>Phonebook</h1>
 
         <ContactForm onSubmit={this.addContact} />
