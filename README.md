@@ -55,7 +55,7 @@ identifiers, use any suitable package, e.g.
 [nanoid](https://www.npmjs.com/package/nanoid). After completing this step, the
 application should look something like this.
 
-![Alt text](image-3.png)
+![Alt text](image.png)
 
 ### Step 2.
 
@@ -85,7 +85,7 @@ Use this markup of an instance with built-in validation for the contact number.
 
 After completing this step, the application should look something like this.
 
-![Alt text](image-4.png)
+![Alt text](image-1.png)
 
 ### Step 3.
 
@@ -104,7 +104,7 @@ state = {
 };
 ```
 
-![Alt text](image-5.png)
+![Alt text](image-2.png)
 
 When we work on new functionality, it can be convenient to hardcode some data
 into a state. This eliminates the need to manually enter data in the interface
@@ -160,11 +160,11 @@ this.
 Deny the user the ability to add contacts whose names are already in the
 phonebook. If you try to do so, print alert with a warning.
 
-![Alt text](image-6.png)
+![Alt text](image-3.png)
 
 ### Step 6
 
 Extend the functionality of the app by allowing the user to delete previously
 saved contacts.
 
-![Alt text](image-7.png)
+![Alt text](image-4.png)
